@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    place-items: center;
+}
+.box{
+ height: 80px;
+
+ width: 100px;
+    margin: 5px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    transition: 0.5s all linear;
+    cursor: pointer;
+    
+}
+.box:hover{
+    scale: 1.1;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+}
+
+.box-2{
+    background: url() center 100%;
+}
+
+
+@media (max-width:480px) {
+    .container{
+      
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .box{
+        height: 150px;
+
+        width: 90%;
+        margin: 5px;
+      
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    .container{
+      
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    .box{
+        height: 150px;
+        width: 95%;
+        margin: 5px;
+      
+    }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    .container{
+      
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    .box{
+        height: 150px;
+        width: 95%;
+        margin: 5px;
+      
+    }
+}
+@media (min-width:1026px) and (max-width:1200px) {
+    .container{
+      
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+    }
+    .box{
+        height: 150px;
+        width: 95%;
+        margin: 5px;
+      
+    }
+}
